@@ -1,0 +1,37 @@
+.container div{
+    float:left;
+    margin-left:10px;
+}
+.clear{
+    clear:both;
+}
+.container::after{
+    clear:both;
+    display: table;
+    content:"";
+}
+.flexclass{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-between;
+    
+}
+
+.flexclass div{
+    padding: 10px;
+    background-color: lightgray;
+}
+.gridclass div{
+    padding: 10px;
+    background-color: lightgray;
+}
+.gridclass{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    text-align: center;
+    align-items: center;
+
+}
